@@ -51,14 +51,14 @@
             <button class="jumpbtn"><a id="next" href=""> Next </a></button>
         </div>
         <script>
-            // window.location.href + "/?q=query&page=1";
+            window.location.href + "/?q=all&page=1";
             let articlesPerPage;
             let totalPages;
             let query = window.location.search.split("?")[1].split("&")[0].split("=")[1];
             let page = parseInt(window.location.search.split("?")[1].split("&")[1].split("=")[1]);
             console.log(query, page);
             const fetchNews = async (query, pageNo)=>{
-                let a = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=ee51db9a2ba344da889002142b0d2b26`);
+                let a = await fetch(`/api?q=${query}&apiKey=ee51db9a2ba344da889002142b0d2b26`);
                 let r = await a.json();
                 console.log(r);
                 totalPages = Math.ceil(r.totalResults/articlesPerPage);

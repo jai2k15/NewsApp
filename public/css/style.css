@@ -139,6 +139,8 @@ section{
 }
 .container img{
     height: 172px;
+    display: block;
+    margin: auto;
     border-radius: 10px;
 }
 #btn{
@@ -256,23 +258,44 @@ section{
 
 }
 @media(max-width:1304px){
+    nav{
+        width: 100%;
+    }
     #content{
         width: 100%;
     }
 }
 @media(max-width:1172px){
+    nav{
+        width: 100%;
+    }
     .container{
         width: 300px;
     }
+    .container img{
+        height: 150px;
+    }
 }
 @media(max-width:1020px){
+    nav{
+        width: 100%;
+    }
     .container{
         width: 250px;
     }
+    .container img{
+        height: 120px;
+    }
 }
 @media(max-width:870px){
+    nav{
+        width: 100%;
+    }
     .container{
         width: 200px;
+    }
+    .container img{
+        height: 100px;
     }
 }
 @media(max-width:720px){
@@ -281,6 +304,9 @@ section{
     }
     .container{
         width: 150px;
+    }
+    .container img{
+        height: 70px;
     }
 }
 @media(max-width:780px){
@@ -298,6 +324,32 @@ section{
 @media(max-width:401px){
     nav{
         width: 100%;
+    }
+
+}
+@media(max-width:569px){
+    nav{
+        width: 100%;
+    }
+    #content{
+        width: 100%;
+        padding: 0;
+    }
+    .container{
+        width: 40%;
+    }
+
+}
+@media(max-width:399px){
+    nav{
+        width: 100%;
+    }
+    #content{
+        width: 100%;
+        padding: 0;
+    }
+    .container{
+        width: 70%;
     }
 
 }

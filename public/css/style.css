@@ -6,7 +6,7 @@
 body{
     /* background: rgb(12, 8, 14); */
     background: rgb(35, 34, 40); /* inner black*/
-    
+    overflow: hidden;
     
 
 

@@ -63,8 +63,8 @@
                 let r = await a.json();
                 console.log(r);
                 totalPages = Math.ceil(r.totalResults/articlesPerPage);
-                prev.href = `/?q=${query}&pageno=${page-1}`;
-                next.href = `/?q=${query}&pageno=${page+1}`;
+                prev.href = `/?q=${query}&page=${page-1}`;
+                next.href = `/?q=${query}&page=${page+1}`;
                 let str="";
                 for(let item of r.articles){
                     let date = new Date(item.publishedAt).toLocaleDateString();
@@ -75,7 +75,7 @@
                 <p>${item.description}</p>
                 <br><br><span>Author : ${item.author}</span>
                 <br><span>Published on : ${date}</span>
-                <br><span>Source : ${item.source.name}</span><br>
+                <br><span class="w-fit">Source : ${item.source.name}</span><br>
                 <button id="btn"><a target="_blank" href="${item.url}">Read more... </a></button>
             </div>
                     `
